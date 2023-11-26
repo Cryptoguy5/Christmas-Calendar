@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Calander</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: url(./holiday-new-year-and-merry-christmas-background-illustration-free-vector.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .week {
+            display: grid;
+            grid-template-columns: repeat(7, 13.7%);
+            width: 50%;
+            height: 5%;
+            border: 2px solid rgb(5, 87, 5);
+            gap: 5px;
+            background-color: rgb(6, 91, 12);
+
+        }
+
+        .calander {
+            height: 75%;
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(7, 13.7%);
+            grid-template-rows: repeat(6, 15.8%);
+            gap: 5px;
+            border: 2px solid rgb(5, 81, 3);
+            background-color: rgb(7, 91, 29);
+        }
+
+        .item {
+            background-color: white;
+        }
+
+        .day {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./christmasphoto.webp);
+            
+        }
+
+        .title {
+            height: 10%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(4, 71, 14);
+            background-image: url(./christmas-background-green-vector-6562523.jpg);
+            background-size: cover;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 18px;
+            color: red;
+        }
+
+        h1 {
+            font-size: 84px;
+            color: red;
+        }
+
+        .grey {
+            color: rgb(203, 201, 201);
+        }
+
+        .holiday {
+            font-size: 12px;
+            font-weight: bolder;
+        }
+
+        @media (max-width: 680px) {
+            
+            .title{
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 12px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .calander, .week {
+                width: 100%;
+                grid-template-columns: repeat(7, 13.3%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+       <h1>
+        December 2023
+       </h1>
+    </div>
+    <div class="week">
+       <div class="day">
+        <h2>
+           Monday
+        </h2>
+       </div>
+       <div class="day">
+        <h2>
+        Tuesday
+         </h2>
+       </div>
+       <div class="day">
+        <h2>
+         Wednesday
+        </h2>
+       </div>
+       <div class="day">
+        <h2>
+        Thursday
+        </h2>
+       </div>
+       <div class="day">
+        <h2>
+        Friday
+        </h2>
+       </div>
+       <div class="day">
+        <h2>
+         Saturday
+        </h2>
+       </div>
+       <div class="day">
+        <h2>
+        Sunday
+        </h2>
+       </div>
+    </div>
+    <div class="calander">
+        <div class="item grey">26</div>
+        <div class="item grey">27</div>
+        <div class="item grey">28</div>
+        <div class="item grey">29</div>
+        <div class="item grey">30</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item">21<p class="holiday">Winter Solstice</p></div>
+        <div class="item">22</div>
+        <div class="item">23</div>
+        <div class="item">24<p class="holiday">Christmas Eve</p></div>
+        <div class="item">25<p class="holiday">Christmas</p></div>
+        <div class="item">26</div>
+        <div class="item">27</div>
+        <div class="item">28</div>
+        <div class="item">29</div>
+        <div class="item">30</div>
+        <div class="item">31<p class="holiday">New Year's Eve</p></div>
+        <div class="item grey">1<p class="holiday grey">New Year's Day</p></div>
+        <div class="item grey">2</div>
+        <div class="item grey">3</div>
+        <div class="item grey">4</div>
+        <div class="item grey">5</div>
+        <div class="item grey">6</div>
+</body>
+</html>
